@@ -5,4 +5,12 @@
 #   Example 4: if your balance is 8, then your program should return 8. 
 
 def computeMinimumPayment( balance ):
-    #TODO write code inside this function that achieves the functionality described above
+    if balance > 476:
+        minimumPayment = (balance * float(0.021))
+        print('$' + str(minimumPayment) + ' due.')
+    elif balance < 476 and balance > 10:
+        minimumPayment = 10
+        print('$' + str(minimumPayment) + ' due.')
+    elif balance < 10:
+        minimumPayment = (balance)
+        print('$' + str(minimumPayment) + ' due.')
